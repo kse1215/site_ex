@@ -36,4 +36,12 @@ window.addEventListener("load", function () {
       tabItems[index].style.display = "block";
     });
   });
+  //   gotop버튼
+  const goTopBtn = this.document.querySelector("#goTop");
+  goTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });

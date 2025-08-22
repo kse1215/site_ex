@@ -1,4 +1,14 @@
 @charset "utf-8";
+body {
+  position: relative;
+  height: 2000px;
+}
+/* gotop버튼 */
+#goTop {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+}
 .inner {
   width: 100%;
   max-width: 960px;
@@ -55,40 +65,40 @@
   right: 0;
   display: block;
   width: 100px;
-  padding: 10px 20px ;
+  padding: 10px 20px;
   background-color: aqua;
   z-index: 999;
 }
 .popup-btn .inner a::after {
-    content: "▲ close";
+  content: "▲ close";
 }
 .popup-btn .inner a.active::after {
-    content: "▼ open";
+  content: "▼ open";
 }
 /* 배너(바뀌는 내용 영역) */
-.tabitem{
-    position: relative;
-    display: none;
-    width: 100%;
+.tabitem {
+  position: relative;
+  display: none;
+  width: 100%;
 }
 /* .tabitem:first-child{
     display: block;
 } */
-.tabitem img{
-    display: block;
-    width: 100%;
+.tabitem img {
+  display: block;
+  width: 100%;
 }
-.tabitem .inner{
-    position: relative;
-    /* height: 100%; */
+.tabitem .inner {
+  position: relative;
+  /* height: 100%; */
 }
-.content{
-    position: absolute;
-    /* top: 50%; */
-    bottom: 30px;
-    right: 0;
-    width: 30%;
-    color: #fff;
+.content {
+  position: absolute;
+  /* top: 50%; */
+  bottom: 30px;
+  right: 0;
+  width: 30%;
+  color: #fff;
 }
 .read-more {
   color: #fff;
